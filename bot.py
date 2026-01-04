@@ -4,6 +4,9 @@ import os
 
 TOKEN = os.getenv("8230458260:AAEeVWX0lxf3gR1YKpN_LRdl5gXil3w8A_4")
 CHANNEL_ID = os.getenv("@mmmesh1")
+if not TOKEN:
+    raise ValueError("TOKEN environment variable is not set!")
+
 PORT = int(os.getenv("PORT", "8443"))  # Render يوفر PORT تلقائيًا
 
 async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
