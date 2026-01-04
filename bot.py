@@ -2,8 +2,8 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
-TOKEN = os.getenv("8230458260:AAEeVWX0lxf3gR1YKpN_LRdl5gXil3w8A_4")
-CHANNEL_ID = os.getenv("mmmesh1")
+TOKEN = "8230458260:AAEeVWX0lxf3gR1YKpN_LRdl5gXil3w8A_4"
+CHANNEL_ID = "@mmmesh1"
 
 async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
